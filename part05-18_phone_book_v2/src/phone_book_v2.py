@@ -1,20 +1,23 @@
 # Write your solution here
 
-
 def run_add(phone_book):
     name = input("name: ")
     number = input("number: ")
     print("ok!")
 
-    phone_book[name] = number
+    if name not in phone_book:
+        phone_book[name] = []
+    phone_book[name].append(number)
 
 def run_search(phone_book):
     name = input("name: ")
-
-    if name in phone_book:
-        print(f"{phone_book[name]}")
-    else:
+  
+    if name not in phone_book:
         print("no number")
+        return
+
+    for number in phone_book[name]:
+        print(number)
 
 def main():
     phone_book = {}
@@ -32,7 +35,5 @@ def main():
 
 
     print("quitting...")
-
-
 
 main()
