@@ -11,3 +11,4 @@ def factorials(n: int):
 
 if __name__ == "__main__":
     (factorials(5))
+    
