@@ -13,16 +13,16 @@ def longest_series_of_neighbours(my_list):
     current_length = 1
     longest_length = 0
 
-    while index < len(my_list):
-        if current_length > longest_length:
-            longest_length = current_length
+    for index in range(0, len(my_list)):
         
         if is_next_to(index, my_list):
             current_length += 1
         else:
             current_length = 1
+
+        longest_length = max(longest_length, current_length)
         
-        index += 1
+
 
     return longest_length
 

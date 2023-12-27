@@ -1,3 +1,6 @@
+# For model solution see - https://tmc.mooc.fi/exercises/193527/solution
+
+
 # Initialize variables to store statistics
 total_points_list = []
 grade_list = []

@@ -6,7 +6,7 @@ def everything_reversed(input_list):
     return output_list
 
 
-if __name__ == "__main__":#
+if __name__ == "__main__":
     my_list = ["Hi", "there", "example", "one more"]
     new_list = everything_reversed(my_list)
     print(new_list)

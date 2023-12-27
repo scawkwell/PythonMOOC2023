@@ -2,8 +2,7 @@
 def formatted(float_list : list):
     formatted = []
     for item in float_list:
-        item = f"{item:.2f}"
-        formatted.append(item)
+        formatted.append(f"{item:.2f}")
     return formatted
 
 

@@ -14,5 +14,5 @@ def count_matching_elements(my_matrix: list, element: int):
 
 
 
-# m = [[1, 2, 1], [0, 3, 4], [1, 0, 0]]
-# print(count_matching_elements(m, 1))
+m = [[1, 2, 1], [0, 3, 4], [1, 0, 0]]
+print(count_matching_elements(m, 1))
